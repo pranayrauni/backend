@@ -9,3 +9,14 @@ During making schema first think of storing data for example register/signup pag
 mongoose or prisma is helper that helps storing these kinds of data.
 
 
+
+# Professional backend
+
+
+- Backend project youtube-twitter model link: https://app.eraser.io/workspace/YtPqZ1VogxGy1jzIDkzj 
+
+
+- gitignore file ka content google pe kisi v gitignore generate karne wali website kar sakte hain
+
+- env variable system se uthaye jate hain taki secure rahe, ye file nhi liye jate. Deployment k time env variables k alag fields hote waha add karna hota hai.
+
