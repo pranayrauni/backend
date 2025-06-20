@@ -40,6 +40,7 @@ mongoose or prisma is helper that helps storing these kinds of data.
 
 ### Database connection approach
 - First approach: Write th connection code inside a function or IIFE. 
+- Second approach: mongoose connection ka code kisi dusre file m likhte hain aur usko fir import kar run karenge
 - 
 - Code consistancy main karne k liye dotenv ko require k wajay import karenge par esme kuch configuration karne padegnge... ye connfiguration se btanaa padega ki env file kaha haia aur package.json file m v configuarion kar l btana padega. Configuration after importing: 
 `dotenv.config({
@@ -50,4 +51,14 @@ Configuration in package.json file to be written under script:
 
 - Agar env variable m change hoga to server fir se start karna hi padega.. nodemon kuch nhi kar sakta
 
+
+- app.use tab use karte jab koi configuration setting karni ho ya middlewares k case m  
+- cookie-parser ka use cookies se related kaamo m karte hain. server se browser k cookies access karne aur set karne k liye
+- Task: cors, cookie-parser k bare m padho
+- data alag alag tarike se aa sakta hai jaise url form json etc to eske liye v configuration karni padti hai taki bahut sara data n aa jaye.
+- For json `app.use(express.json())` 
+- For url `app.use(express.urlencoded({extended: true, limit: "16kb"}))`
+- Read about this[dot]data in nodejs
+- Read about server status code
+- ApiError aur ApiResponse k file utils m bnaye taki jo v error aur response aaye wo esi se h k jaye
 
