@@ -62,3 +62,15 @@ Configuration in package.json file to be written under script:
 - Read about server status code
 - ApiError aur ApiResponse k file utils m bnaye taki jo v error aur response aaye wo esi se h k jaye
 
+
+- mongodb jaise hi data save karta hai ek unique id generate karta hai BSON data m not json.
+
+- watch history ko handle karne k liye `mongoose-aggregate-paginate-v2` package ka use karenge taki aggregation queries likh sake.
+
+- mongoose v middleware provide karta hai jaise `pre` ye data save hone k just pahle run hoga aur function k andar kuch v likh k run karwa sakte
+
+- token secret production software m cryptographic algo se generate kar k use kiya karo
+
+- access token database m store nhi karenge.. refresh token ko database m store karenge
+
+- cutom methods bna k password comapre aur tokens generate karenge
