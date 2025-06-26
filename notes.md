@@ -74,3 +74,11 @@ Configuration in package.json file to be written under script:
 - access token database m store nhi karenge.. refresh token ko database m store karenge
 
 - cutom methods bna k password comapre aur tokens generate karenge
+
+
+### Cloudinary file upload
+- file upload k liye multer package ka use kar sakte hai ye express fileupload.
+- File upload ho k pahle server pe aaygi fir usko cloudinary pe upload kiya jayga waha se file k url le k usko databae store kiya jyaga aur server par se file delete kar di jaygi
+- read about multer
+- file ko DiskStorage m save karwao. MemoryStorage m problem hogi agar badu file aa gyi to.
+- file name ko unique hi rakhna chahiye kyuki agar same naam se file aa gyi to rewrite ho jaygi
