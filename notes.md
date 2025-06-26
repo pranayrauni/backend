@@ -82,3 +82,51 @@ Configuration in package.json file to be written under script:
 - read about multer
 - file ko DiskStorage m save karwao. MemoryStorage m problem hogi agar badu file aa gyi to.
 - file name ko unique hi rakhna chahiye kyuki agar same naam se file aa gyi to rewrite ho jaygi
+
+### HTTP
+
+- HTTP and HTTPS m protocol ka difference hai sirf, technology way of communication enme kuch major difference nhi hai... HTTP m data clear text m jaati par HTTPS m data encryption layer lag jati hai
+- URL: Uniform Resource Locatar
+- URI: Uniform resource Identifier
+- URN: Uniform Rsource Name
+- Jaise http req bhejte hai to sath m ki info bhejnhi hoti hai to wahi metadata hai aur esi ko headers bolte hai
+- metadata: key-value sent alog with req and res
+- kuch headers already defined hai ki ye aayga to ye expect karta hu...
+ khud k headres v bnaye jaa sakte hain
+- headers es baat pe v depend karta hai ki kaise req bheji gyi hai for example programtically, postamn, thunderclient
+- headers k bahut kaam hote hai for example caching, authentication, state management (guest user, loggedin user, etc) 
+- x-prefix was used in headers. example x-name. now deprecated
+- Request header => from client
+- Response header => from server
+- Representation header => encoding/compression. network ki limit hai data bhejne ki us case m compress karna padta hai for example zerodha jaise application m
+- Payload header => data
+- Common headers: Accept: application/json,   ye btata hai kis type ka data accept karne wala hu, html ka data accept karna ho to text/html 
+- User-Agent => ye btata hai ki kaun si application se request aayi hai for example postman or browser(kaun sa browser tha kaun sa engine support kar rha tha kaun sa operating system), website visit karne pop aata hai ki app use kariye wo esi ka use kar k pata karte hai
+- Authorization => jwt token bheja jata hai Bearer kyword k sath prefix m  
+- Content-Type => image pdf etc
+- Cookie => key value pair, jaise user ko kitne time tak login rakhna hai etc
+- Cache-Control => data kab expire karna hai agar data network m rahna chah rha hai
+
+- CORS header: kaha se request aa sakti hai... Access-Control-Allow-Origin, Acess-Control-Allow-Credentials, Access-Control-Allow-Method 
+- Security: Cross-Origin-Embedder-Policy, Cross-Origin-Opener-Policy, Content-Security-Policy, X-XSS-Protection
+
+#### HTTP Methods
+- Basic set of operatio that can be used to interact with server
+- GET : retrieve a resource
+- HEAD : No message body (response headers only)
+- OPTIONS : What operation are available
+- TRACE : loopback test (get soem data), proxy wagera k karan data late se aa rha hai ya hopping bhaut jyada ho rhi hai tab use hoti hai
+- DELETE : remove a response
+- PUT : replace a resource
+- POST : interact with resource
+- PATCH : change part of a resource
+
+#### Status code
+- 1xx : Informational
+- 2xx : Success
+- 3xx : Redirection
+- 4xx : Client error
+- 5xx : server error
+
+
+- 100 : continue, 102: processing, 200: ok, 201: created, 202: accepted, 307: temperory redirect, 308: permanent redirect, 400: bad request, 401: unauthorized, 402: payment required, 404: not found, 500: internal server error, 504: gateway timeout
