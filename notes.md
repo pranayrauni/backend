@@ -130,3 +130,21 @@ Configuration in package.json file to be written under script:
 
 
 - 100 : continue, 102: processing, 200: ok, 201: created, 202: accepted, 307: temperory redirect, 308: permanent redirect, 400: bad request, 401: unauthorized, 402: payment required, 404: not found, 500: internal server error, 504: gateway timeout
+
+
+## Controller  
+- asyncHandler naam ki ek helper file () likhe hai taki controller m koi problem aaye to warpper bna k rakha hua hai taki har chij ko promise ya try catch m dalna nhi padega
+
+#### Registering a user
+- Get details from frontned. Details depend on model.
+- Validations - not empty, password length etc
+- check if user already exists : username or email
+- check for images and avatar
+- upload images to cloudinay
+- create user object - create entry in database
+- remove password and refresh token feed from response
+- check for user creation
+- return response
+
+- Jo v details body se aati hai jaise form/json wo req.body se mil jati hai
+- 
