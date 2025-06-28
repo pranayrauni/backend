@@ -147,4 +147,13 @@ Configuration in package.json file to be written under script:
 - return response
 
 - Jo v details body se aati hai jaise form/json wo req.body se mil jati hai
+
+
+### Token
+- Access token and refresh token both are same and generated in same way. Only difference is lifetime of refresh token is more then access token. 
+- login to access token se hi hoga per ye kuch time baad expire kar diya jata hai aur jo refresh token generate hui thi usko database m store kiya gya hai.. user ko fir se login na karna pade eske liye user se ek api endpoint hit karwao aur jo refresh token database m hai aur dubara generate hua hai agar same hua to user ko naya access token mil jata hai aur tab user login rah sakta hai 
+
+
+### Cookie
+- cookie two ways acces hoti hai. req and res dono m access kar sakte hai kyuki cookie middleware add kar di gyi hai
 - 
