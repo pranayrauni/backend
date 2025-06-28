@@ -156,4 +156,4 @@ Configuration in package.json file to be written under script:
 
 ### Cookie
 - cookie two ways acces hoti hai. req and res dono m access kar sakte hai kyuki cookie middleware add kar di gyi hai
-- 
+- write article on access token, refresh token and cookies
