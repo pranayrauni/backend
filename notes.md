@@ -157,3 +157,6 @@ Configuration in package.json file to be written under script:
 ### Cookie
 - cookie two ways acces hoti hai. req and res dono m access kar sakte hai kyuki cookie middleware add kar di gyi hai
 - write article on access token, refresh token and cookies
+
+### Note
+- agar file update kawani ho to uska controller alag file m likho... Uska lag endpoint hit kar k image save karwa do.. warna text data include kar k save karwana acaha nhi hai
