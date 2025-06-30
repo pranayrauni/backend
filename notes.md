@@ -160,3 +160,17 @@ Configuration in package.json file to be written under script:
 
 ### Note
 - agar file update kawani ho to uska controller alag file m likho... Uska lag endpoint hit kar k image save karwa do.. warna text data include kar k save karwana acaha nhi hai
+
+
+### Subscription schema
+- sare subscribers li id ko ek array m store krana acha idea nhi hai kyuki agar millons subscribers ho gye aur pahle ne unsubcribe kar diya to utna items ko move karna padega 
+- jab koi subcriber(a) ek channel(b) ko subscribe karega to ek document banega jisme ek channel name hoga aur subscriber name hoga...
+- jab v subcriber count pta karna ho to channel (b) ko dundhenge taki jis v documents m b hoga uske sath a hoga aur documents number count kar lenge..
+- usi trah agar channel(b) ne kitno ko subscribe kar rakha hai ye pta karna ho to documents m subcriber(a) ko dekhenge  
+
+
+### Agrregation pipeline
+- An aggregation pipeline consists of one or more stages that documents: 
+- each stage performs an operation on input documents 
+- The documents that are inpute from a stage are passed to enxt stage  
+- an aggregation pipeline can return results for group of documents, for example average, maximum, minimum
