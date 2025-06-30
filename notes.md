@@ -160,6 +160,7 @@ Configuration in package.json file to be written under script:
 
 ### Note
 - agar file update kawani ho to uska controller alag file m likho... Uska lag endpoint hit kar k image save karwa do.. warna text data include kar k save karwana acaha nhi hai
+- req.user._id hmame string deti hai mongodb ki id nhi... mongoose es string ko convert kar deta hai mongodb ki object id m.. `ObjectId("<string>")`
 
 
 ### Subscription schema
@@ -174,3 +175,4 @@ Configuration in package.json file to be written under script:
 - each stage performs an operation on input documents 
 - The documents that are inpute from a stage are passed to enxt stage  
 - an aggregation pipeline can return results for group of documents, for example average, maximum, minimum
+- aggregation pipeline ka code m mongoose help nhi karta hai... ye directly mongodb m jata hai
